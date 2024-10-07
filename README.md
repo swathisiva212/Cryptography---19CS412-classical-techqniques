@@ -30,7 +30,6 @@ Implementation using C or pyhton code
 
 
 ## PROGRAM:
-PROGRAM:
 CEASER CIPHER:
 ```
 #include <stdio.h>
@@ -83,9 +82,8 @@ int main()
 
 ## OUTPUT:
 OUTPUT:
-Simulating Caesar Cipher
 
-![caser cipher](https://github.com/user-attachments/assets/d9c63fe3-0e2d-4efd-a435-201a592bc199)
+[cipher](https://github.com/user-attachments/assets/45183bb3-ee1a-4c23-8f40-b3a2cd2bd45e)
 
 ## RESULT:
 The program is executed successfully
@@ -364,73 +362,73 @@ The Vigenere cipher is a method of encrypting alphabetic text by using a series 
 ## PROGRAM:
 ```
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
-
-#define MAX_LENGTH 100
-
-int main() 
+#include <string.h>
+void encipher();
+void decipher();
+int main()
 {
-    char input[MAX_LENGTH];
-    char key[MAX_LENGTH];
-    char result[MAX_LENGTH];
-
-    printf("Enter the text to encrypt: ");
-    fgets(input, MAX_LENGTH, stdin);
-    input[strcspn(input, "\n")] = '\0'; 
-
-    printf("Enter the key: ");
-    fgets(key, MAX_LENGTH, stdin);
-    key[strcspn(key, "\n")] = '\0'; 
-
-    int inputLength = strlen(input);
-    int keyLength = strlen(key);
-
-    for (int i = 0, j = 0; i < inputLength; ++i) 
-    {
-        char currentChar = input[i];
-
-        if (isalpha(currentChar))
-        {
-            int shift = toupper(key[j % keyLength]) - 'A';
-            int base = isupper(currentChar) ? 'A' : 'a';
-
-            result[i] = ((currentChar - base + shift + 26) % 26) + base;
-            ++j;
-        }
-        else
-        {
-            result[i] = currentChar;
-        }
-    }
-
-    result[inputLength] = '\0';
-    printf("Encrypted text: %s\n", result);
-
-    for (int i = 0, j = 0; i < inputLength; ++i) 
-    {
-        char currentChar = result[i];
-
-        if (isalpha(currentChar)) 
-        {
-            int shift = toupper(key[j % keyLength]) - 'A';
-            int base = isupper(currentChar) ? 'A' : 'a';
-
-            result[i] = ((currentChar - base - shift + 26) % 26) + base;
-            ++j;
-        }
-    }
-
-    result[inputLength] = '\0';
-    printf("Decrypted text: %s\n", result);
-
-    return 0;
+int choice;
+while(1)
+{
+printf("\n1. Encrypt Text");
+printf("\n2. Decrypt Text");
+printf("\n3. Exit");
+printf("\n\nEnter Your Choice : ");
+scanf("%d",&choice);
+if(choice == 3)
+exit(0);
+else if(choice == 1)
+encipher();
+else if(choice == 2)
+decipher();
+else
+printf("Please Enter Valid Option.");
+}
+}
+void encipher()
+{
+unsigned int i,j;
+char input[50],key[10];
+printf("\n\nEnter Plain Text: ");
+scanf("%s",input);
+printf("\nEnter Key Value: ");
+scanf("%s",key);
+printf("\nResultant Cipher Text: ");
+for(i=0,j=0;i<strlen(input);i++,j++)
+{
+if(j>=strlen(key))
+{ j=0;
+}
+printf("%c",65+(((toupper(input[i])-65)+(toupper(key[j])-
+65))%26));
+}}
+void decipher()
+{
+unsigned int i,j;
+char input[50],key[10];
+int value;
+printf("\n\nEnter Cipher Text: ");
+scanf("%s",input);
+printf("\n\nEnter the key value: ");
+scanf("%s",key);
+for(i=0,j=0;i<strlen(input);i++,j++)
+{
+if(j>=strlen(key))
+{ j=0; }
+value = (toupper(input[i])-64)-(toupper(key[j])-64);
+if( value < 0)
+{ value = value * -1;
+}
+printf("%c",65 + (value % 26));
+}
+return 0;
 }
 ````
-
 ## OUTPUT:
 
-![cipher](https://github.com/user-attachments/assets/45183bb3-ee1a-4c23-8f40-b3a2cd2bd45e)
+![image](https://github.com/user-attachments/assets/f5386273-b40a-4f96-8eb3-10f7cb0a589c)
+
 
 ## RESULT:
 The program is executed successfully
