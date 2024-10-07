@@ -81,9 +81,8 @@ int main()
 
 
 ## OUTPUT:
-OUTPUT:
 
-[cipher](https://github.com/user-attachments/assets/45183bb3-ee1a-4c23-8f40-b3a2cd2bd45e)
+![cipher](https://github.com/user-attachments/assets/2d5373e8-30f6-4cc0-9b17-2785e0453358)
 
 ## RESULT:
 The program is executed successfully
