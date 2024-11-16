@@ -262,7 +262,7 @@ int main()
 
 ## OUTPUT:
 
-![play cipher](https://github.com/user-attachments/assets/130430c3-d96e-45a2-8d9d-9a8ac301bebf)
+![play fair](https://github.com/user-attachments/assets/c221fb2c-b2f3-4285-a0b1-21069ddd6972)
 
 
 ## RESULT:
@@ -327,7 +327,8 @@ int main()
 
 ## OUTPUT:
 
-![hill cipher](https://github.com/user-attachments/assets/3eef7351-52bd-4c01-a4db-ac5f3fdae36e)
+![hill cipher](https://github.com/user-attachments/assets/eb2f81eb-3572-4f8a-846a-cc104e6df5c3)
+
 
 
 ## RESULT:
@@ -427,7 +428,8 @@ return 0;
 ````
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/f5386273-b40a-4f96-8eb3-10f7cb0a589c)
+![Screenshot 2024-10-28 083915](https://github.com/user-attachments/assets/a3727464-84c0-47a5-a3f3-184b2f975546)
+
 
 
 ## RESULT:
