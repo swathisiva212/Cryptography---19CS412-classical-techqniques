@@ -428,7 +428,8 @@ return 0;
 ````
 ## OUTPUT:
 
-![Screenshot 2024-10-28 083915](https://github.com/user-attachments/assets/a3727464-84c0-47a5-a3f3-184b2f975546)
+![Screenshot 2024-10-28 084740 rail](https://github.com/user-attachments/assets/9482c567-b4b0-40f8-a818-a0bb95d39eab)
+
 
 
 
@@ -516,7 +517,8 @@ int main()
 
 ## OUTPUT:
 
-![rail  fence](https://github.com/user-attachments/assets/d5f45389-fd50-4e62-b200-19f004ab8f3b)
+![Screenshot 2024-11-16 142044](https://github.com/user-attachments/assets/2c871397-d41e-4df8-8ce7-8b735521d64b)
+
 
 ## RESULT:
 The program is executed successfully
